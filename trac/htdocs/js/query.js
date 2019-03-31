@@ -45,7 +45,7 @@
 
   // Create a <select>
   function createSelect(name, options, optional, optgroups) {
-    var e = $($.htmlFormat('<select name="$1">', name));
+    var e = $($.htmlFormat('<select name="$1"></select>', name));
     if (optional)
       $("<option>").appendTo(e);
     appendOptions(e, options);
